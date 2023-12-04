@@ -10,6 +10,10 @@
 </head>
 <body>
     <style>
+        .leftimage{
+            align-items: center;
+            justify-content: center;
+        }
         p{
             font-size: clamp(20px,1.65vw,30px) !important;
         }
@@ -34,6 +38,26 @@
         }
         .leftimage.text img {
             width: 100% !important;
+        }
+        @media (max-width: 1180px){
+        .leftimage{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .leftimage.img{
+            width: 100% !important;
+        }
+        .leftimage.text{
+            width: 100% !important;
+            margin: 0 !important;
+        }
+        .leftimage img .noshadow{
+            width: 100% !important;
+        }
+        .fs06{
+            font-size: 1rem;
+        }
         }
     </style>
     <div class="main_window">
@@ -85,8 +109,8 @@
                                     <div class="leftimage img noshadow">
                                         <p>На рисунке 2 представлен график двухсменного режима работы. На графике всплеск нагрузки длится дольше, чем в первом случае, всплеск длится с 8 до 23 часов.</p><br>
                                         <img src="./content/2.jpg" >
-                                        <p class="TxtAlgCen lh0"><b class="fs06 TxtAlgCen lh0">Рисунок 2. Суточный график нагрузки предприятия <br>
-                                            с изображением активной и реактивной мощностей,<br> двухсменный режим</b></p>
+                                        <p class="TxtAlgCen lh0"><b class="fs06 TxtAlgCen lh0">Рисунок 2. Суточный график нагрузки предприятия
+                                            с изображением активной и реактивной мощностей, двухсменный режим</b></p>
                                         <p><br></p>
                                         
                                     </div>
