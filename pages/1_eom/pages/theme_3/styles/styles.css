@@ -16,6 +16,10 @@ body{
     height: 100vh;
 }
 
+p{
+    font-size: clamp(25px,1.25vw,30px) !important;    
+}
+
 .container{
     height: 100%;
 }
@@ -25,7 +29,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 95px;
     color: white;
     background-color: black;
     margin-bottom: 30px;
@@ -38,8 +41,14 @@ body{
     padding-right: 30px;
     border: solid 2px;
     border-radius: 35px;
-    width: 300px;
-    margin-left: 25px;
+}
+
+.link_backward{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 310px;
+    height: 55px;
 }
 
 .black_header a:hover{
@@ -48,11 +57,16 @@ body{
     color: black;
 }
 
+.black_header h1{
+    width: 60% !important;
+}
+
 .main_window h2{
     color: rgb(255, 114, 118);
     padding: 0px 25px 25px 25px;
     font-size: 30px;
 }
+
 
 .second_theme{
     margin-top: 25px;
@@ -66,11 +80,7 @@ body{
 }
 
 .general_side{
-    max-height: 85vh;
     background-color: rgb(222, 235, 247);
-    border-radius: 50px;
-    padding: 5px;
-    margin: 25px;
 }
 
 .first_part{
@@ -81,23 +91,21 @@ body{
 .content{
     display: flex;
     flex-direction: column;
-    height: 83vh;
-    overflow-y: auto;
-    scroll-snap-align: start;
     padding: 35px;
-    margin: 0px 25px 25px 0px; 
+    margin: 0px; 
 }
 
+.content p{
+    margin: 25px;
+    margin-top: 0 !important;
+    font-size: 30px;
+}
 
 
 .text_content{
     padding: 15px;
 }
 
-.content p{
-    margin: 25px;
-    font-size: 30px;
-}
 
 
 .text_content ol {
@@ -443,26 +451,16 @@ font-size: 20px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0px 25px 25px 25px;
+    margin: 0 0 25px 0;
 }
 
 
 .first_scheme img{
-    height: 90%;
+    width: 90%;
 }
 
 
 @media (max-width: 1445px){
-    .black_header{
-        text-align: center;
-        height: 200px;
-        flex-direction: column;
-    }
-
-    .black_header h1{
-        margin-bottom: 35px;
-    }
-
     .link_backward a:nth-child(1){
         margin-left: 0;
     }
@@ -472,13 +470,25 @@ font-size: 20px;
     }
 }
 
-@media (max-width: 1131px){
+@media (max-width: 1180px){
     .content img{
         margin-left: 0;
         margin-right: 0;
         width: 90%;
     }
-
+    .content{
+        display: flex;
+        flex-direction: column;
+        padding: 35px;
+        margin: 0px; 
+    }
+    
+    .content p{
+        margin: 25px;
+        margin-top: 0 !important;
+        font-size: 30px;
+    }
+    
     .text_content{
         margin-top: 25px;
     }
@@ -523,10 +533,6 @@ font-size: 20px;
 }
 
 @media (max-width: 618px){
-    .black_header{
-        height: 275px;
-    }
-
     .general_side{
         border-radius: 10px;
     }

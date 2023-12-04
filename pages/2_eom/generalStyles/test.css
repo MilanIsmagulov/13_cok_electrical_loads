@@ -36,14 +36,6 @@
     font-feature-settings: 'liga';
 }
 
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat' , 'Material Icons' , sans-serif;
-    box-sizing: border-box;
-}
-
 a{
     text-decoration: none;
 }
@@ -153,17 +145,12 @@ body{
 }
 
 .number_marker p{
-    font-size: 25px;
+    font-size: 25px !important;
     color: #000;
     padding: 25px;
+    margin-right: 25px;
     border-left: 3px solid #000;
 }
-
-.step_marker{
-    color: rgb(191, 191, 191);
-    margin-left: 25px;
-}
-
 
 .step_marker_and_buttons{
     margin-left: 25px;
@@ -280,9 +267,8 @@ body{
 }
 
 .step_marker_and_buttons{
-    margin-top: 60px;
+    margin-top: 15vh;
     padding-bottom: 50px;
-    width: 96%;
 }
 
 
@@ -310,6 +296,7 @@ body{
     width: 90%;
 }
 .blocked{
+    display: none;
     background-color: #bfbfbf !important;
 }
 .twenty{
@@ -336,7 +323,7 @@ body{
     display: inline-block;
 }
 .smalltext{
-    font-size: 0.5em !important;
+    font-size: 0.85em !important;
     position: relative;
     top:0.4em;
 }
@@ -351,32 +338,38 @@ body{
     align-items: center;
 }
 .lh0{
-    line-height: 0.4em;
+    line-height: 0.85em;
 }
 
 
 /*Стили для блока: изображение слева справа текст*/
 .leftimage.img{
-    width: 40%;
+    position: relative;
+    width: 30%;
     display: inline-block;
-    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.158);
-    border-radius: 5px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.0);
+    border-radius: 25px;
     object-fit: contain;
 }
 .leftimage.img img{
     width: 100%;
 }
 .leftimage.text{
-    display: inline-block;
-    width: 55%;
-    margin-left:2.5em;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 0 !important;
+    margin-left: 2em !important;
 }
 .leftimage.text img{
     width: 80%;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
 }
 .leftimage{
-    margin-top: 1em;
+    position: relative;
     margin-bottom: 1em;
     display: flex;
 }
@@ -388,14 +381,19 @@ body{
 }
 .imgquest.imgpart img{
     width: 100%;
+    min-width: 500px;
 }
 .imgquest{
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .imgquest input{
     position: relative;
     top:70%;
-    left: 20%;
+    min-width: 200px;
     margin-top: 1em;
     width: 60%;
     height: calc(2.25rem + 2px);
@@ -410,11 +408,14 @@ body{
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 .imgquest.answer.down{
-    width: 30%;
+    width: 40%;
     flex-direction: column;
-    margin-right: 4em;
+    align-items: center;
+    justify-content: center;
 }
+
 .aboveinput{
     position: relative;
     top:70%;
@@ -492,6 +493,8 @@ body{
     display: flex;
 }
 .zoom_popup.t{
-    bottom:93%;
-    left:92%;
+    border-radius: 25px;
+    top: 15px !important;
+    right: 15px !important;
 }
+

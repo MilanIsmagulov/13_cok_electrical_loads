@@ -27,7 +27,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 95px;
     color: white;
     background-color: black;
     margin-bottom: 24px;
@@ -222,11 +221,23 @@ body{
     visibility: visible;
 }
 
+#display_none_3{
+    display: none;
+}
+
+#display_none_3_1{
+    display: block;
+}
+
 @media (max-width: 1450px){
-    .black_header{
-        height: 200px;
+    #display_none_3_1{
+        display: none;
     }
 
+    #display_none_3{
+        display: block;
+    }
+    
     .container{
         display: flex;
         flex-direction: column;

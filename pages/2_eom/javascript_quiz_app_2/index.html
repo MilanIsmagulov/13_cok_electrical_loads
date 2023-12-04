@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="../generalStyles/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <title>Электрические нагрузки</title>
 </head>
 <body>
@@ -45,12 +48,20 @@
                                         <p class="bluetext"><b>Основные методы расчета электрических нагрузок</b></p><br>
                                         <p>На рисунке изображены основные формулы и методы, используемые в электроснабжении для расчета электрических нагрузок</p><br>
                                         <p><b>Наиболее распространен и прост метод расчета по номинальной мощности и коэффициенту спроса.</b></p><br>
-                                        <img src="./content/2.png" width="100%">
+                                        <p>Расчетную активную мощность можно расчитать по формуле:</p>
+                                        <p class="formula">$$Q_p = {k_{C.A.} \cdot P_н}$$</p>
+                                        <p>где <i>k</i><sub>c.a.</sub> - средневзвешанное значение коэффициента спроса для группы электроприемников цеха/отделения, объединенных общим технологическим процессом и режимом работы, о.е.</p> 
                                     </div>
                                     <br>
-                                    
                                 </div>
-                                <img src="./content/3.png" class="fulllenimage">
+                                <p>При расчете реактивной мощности используется коэффициент реактивной мощности <i>tgφ</i>, который, в свою очередь, находится по средневзвешенному значению коэффициента мощности группы электроприемников цеха/отделения <i>cosφ</i><sub>СР.В.</sub>.</p>
+                                <p style="margin-top: 10px;"><b>Формула расчета:</b></p>
+                                <p class="formula">$$Q_p = {P_p \cdot tgφ}$$</p>
+                                <p>Зная величины активной и реактивной мощностей, можно найти полную расчетную мощность по формуле:</p>
+                                <p class="formula">$$S_{p} = {\sqrt{P^2_{р}+Q^2_{р}}}$$</p>
+                                <p>Конечным этапом в данном методе идет расчет тока:</p>
+                                <p class="formula">$$I_{p} = {\frac{S_{p}}{\sqrt{3} \cdot U_{н}}}$$</p>
+                                
                             </div>
                         </div>
                     </div>

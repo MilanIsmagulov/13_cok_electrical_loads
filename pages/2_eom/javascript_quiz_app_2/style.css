@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+.step_marker_and_buttons{
+    margin-top: 2vh !important;
+}
+.leftimage.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px !important;
+}
+.leftimage.img img{
+    aspect-ratio: 1/1.2;
+}
+
+.formula{
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-style: normal;
+    text-decoration: none;
+    font-family: serif !important;
+}
+
+#MathJax-script{
+    font-family: serif !important;
+}
+
+.leftimage.text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 25px !important;
+    width: 70% !important;
+}
+
+.popup_text img{
+    height: auto !important;
+    width: 100% !important;
+}
+
+.leftimage.img{
+    width: 30% !important;
+}
+
+.leftimage.text img{
+    margin-top: 10px;
+    max-width: 400px !important;
+}
+
+@media (max-width: 1180px){
+    .leftimage{
+        align-items: center;
+        flex-direction: column !important;
+    }
+    .leftimage.text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 25px !important;
+        width: 100% !important;
+    }
+    .leftimage.text p{
+        width: 100%;
+    }
+    .leftimage.text img{
+        width: 40% !important;
+        max-width: 200px !important;
+    }
+    .theory_eom{
+        margin-right: 0 !important;
+    }
+}

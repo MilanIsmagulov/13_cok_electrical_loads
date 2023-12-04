@@ -30,7 +30,22 @@
                             <img id="open_popup_button" src="./content/description.svg" alt="description">
                             <p class="number_description"></p>
                         </div>
+                        <style>
+                            @media (max-width: 1180px){
+                                .leftimage{
+                                    align-items: center;
+                                    justify-content: center;
+                                    flex-direction: column;
+                                }
+                                .leftimage .text{
+                                    width: 100% !important;
+                                }
+                                .leftimage.img{
 
+                                    width: 45% !important;
+                                }
+                            }
+                        </style>
                     </div>
                     <div class="theory_eom" id="theory_eom_2">
                         <div class="second">
@@ -58,11 +73,13 @@
                                         <button class="zoom_popup t" onclick="location.href='#popup4'" ><img src="./content/zoom_up.svg" alt="2"></button>
                                     </div>
                                     <div class="leftimage text">
-                                        <p>Радиус окружности R<i class="smalltext">0,4i </i>, показывает нагрузку Р<i class="smalltext">РЦi </i> до 1 кВ для i-го подразделения</p>
+                                        <p>Радиус окружности R<sub>0,4i</sub>, показывает нагрузку Р<sub>Цi</sub> до 1 кВ для i-го подразделения</p>
                                         <img class="thirdty" src="./content/3.png">
-                                        <p>где m – принятый для мощности масштаб на картограмме, кВт/мм².</p>
-                                        <p>Аналогично находятся радиусы окружностей для нагрузок с номинальным напряжением 6 и 10 кВ. Масштаб при этом остаётся прежним. </p>
-                                        <p>Угол α<i class="smalltext">i</i>  сектора, отображающего расчётную мощность электрического освещения Р<i class="smalltext">(Р ОСi)</i> i-го подразделения откладывается от горизонтали против часовой стрелки в соответствии с расчётным значением</p>
+                                        
+                                        <p>
+                                            где m – принятый для мощности масштаб на картограмме, кВт/мм². <br>
+                                            Аналогично находятся радиусы окружностей для нагрузок с номинальным напряжением 6 и 10 кВ. Масштаб при этом остаётся прежним. </p>
+                                        <p>Угол α<sub>i</sub> сектора, отображающего расчётную мощность электрического освещения Р<sub>(Р ОСi)</sub> i-го подразделения откладывается от горизонтали против часовой стрелки в соответствии с расчётным значением</p>
                                         <img class="thirdty" src="./content/4.png">
                                     </div>
                                     <br>
@@ -70,7 +87,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="step_marker_and_buttons">
+                    <div class="step_marker_and_buttons" style="margin-top: 2vh; padding: 30px;">
                         <div class="step_marker">
                             
                         </div>

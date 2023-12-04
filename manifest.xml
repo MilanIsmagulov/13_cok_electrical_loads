@@ -1,0 +1,30 @@
+<course>
+<title>ФГОС СПО 13.02.11 МДК 06.04 Электрические нагрузки</title>
+<description/>
+<language>ru</language>
+<!-- Что это? -->
+<code>301121139</code> 
+<!-- Что это? -->
+<fgos_title>ФГОС СПО 13.02.11</fgos_title>
+<fgos_text>Техническая эксплуатация и обслуживание электрического и электромеханического оборудования (по отраслям)
+</fgos_text>
+<mdk_title>МДК 06.04</mdk_title>
+<mdk_text>Электроснабжение</mdk_text>
+<structure>
+<item0>
+<name>Электрические нагрузки
+</name>
+<code>1_eom</code>
+</item0>
+<item1>
+<name>Электрические нагрузки
+</name>
+<code>2_eom</code>
+</item1>
+<item2>
+<name>Электрические нагрузки
+</name>
+<code>3_eom</code>
+</item2>
+</structure>
+</course>

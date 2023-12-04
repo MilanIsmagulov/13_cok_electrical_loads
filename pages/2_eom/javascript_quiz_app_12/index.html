@@ -9,6 +9,33 @@
     <title>Электрические нагрузки</title>
 </head>
 <body>
+    <style>
+        p{
+            font-size: clamp(20px,1.65vw,30px) !important;
+        }
+        .theory_eom{
+            margin: 0 !important;
+        }
+        .leftimage{
+            margin: 0 !important;
+            width: 100%;
+            align-self: stretch;
+        }
+
+        .leftimage img .noshadow{
+            width: 50% !important;
+        }
+        .leftimage.img{
+            width: 50%;
+        }
+        .leftimage.text{
+            justify-content: flex-start;
+            width: 50% !important;
+        }
+        .leftimage.text img {
+            width: 100% !important;
+        }
+    </style>
     <div class="main_window">
         <div class="black_header">
             <h1>
@@ -53,18 +80,20 @@
                                 </div>
 
                                 <p>На рисунке 1  представлен график с односменным режимом работы. На нем отображен «всплеск» нагрузки, с 7 до 15 час, это соответствует времени одной рабочей смены.</p>
-                                
-                                <div class="leftimage">
+                                <br>
+                                <div class="leftimage" id="left_img_2">
                                     <div class="leftimage img noshadow">
+                                        <p>На рисунке 2 представлен график двухсменного режима работы. На графике всплеск нагрузки длится дольше, чем в первом случае, всплеск длится с 8 до 23 часов.</p><br>
                                         <img src="./content/2.jpg" >
                                         <p class="TxtAlgCen lh0"><b class="fs06 TxtAlgCen lh0">Рисунок 2. Суточный график нагрузки предприятия <br>
                                             с изображением активной и реактивной мощностей,<br> двухсменный режим</b></p>
                                         <p><br></p>
-                                        <p>Посмотрев на график при трёхсменном режиме работы, можно увидеть, что нагрузка присутствует на протяжении всех суток. </p>
+                                        
                                     </div>
                                     
-                                    <div class="leftimage text">
-                                        <p>На рисунке 2 представлен график двухсменного режима работы. На графике всплеск нагрузки длится дольше, чем в первом случае, всплеск длится с 8 до 23 часов.</p><br>
+                                    <div class="leftimage text" id="left_img_3">
+                                        <p>Посмотрев на график при трёхсменном режиме работы, можно увидеть, что нагрузка присутствует на протяжении всех суток. </p>
+
                                         <img src="./content/3.jpg" >
                                         <p class="TxtAlgCen lh0"><b class="fs06 TxtAlgCen lh0">Рисунок 3. Суточный график нагрузки предприятия 
                                             с изображением активной и реактивной мощностей, трёхсменный режим
@@ -74,7 +103,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="step_marker_and_buttons">
+                    <div class="step_marker_and_buttons" style="width: 100%; padding: 50px; padding-top: 0px; margin-top: 35px; margin: 0 !important;">
                         <div class="step_marker">
                             
                         </div>

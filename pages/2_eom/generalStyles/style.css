@@ -5,12 +5,32 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat' , sans-serif;
     box-sizing: border-box;
+}
+
+p {
+    font-family: 'Montserrat' , sans-serif, serif;
 }
 
 a{
     text-decoration: none;
+}
+
+h1 {
+    font-family: 'Montserrat' , sans-serif, serif;
+}
+
+a{
+    font-family: 'Montserrat' , sans-serif, serif;
+}
+
+button{
+    font-family: 'Montserrat' , sans-serif, serif;
+}
+
+input{
+    border-radius: 10px !important;
+    font-family: 'Montserrat' , sans-serif, serif !important;
 }
 
 body{
@@ -18,6 +38,10 @@ body{
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+}
+
+p{
+    font-size: clamp(25px,2vw,30px) !important;
 }
 
 .main_window{
@@ -43,7 +67,6 @@ body{
     border: solid 2px;
     border-radius: 35px;
     width: 300px;
-    margin-left: 25px;
     transition: all 0.3s;
 }
 
@@ -54,10 +77,8 @@ body{
 }
 
 .content{
-    margin-right: 25px;
     border-radius: 50px;
     background-color: rgb(255, 255, 255);
-    height: 84%;
 }
 
 .answer_buttons{
@@ -197,6 +218,51 @@ input:disabled {
 
     }
 
+    .imgquest.imgpart{
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 15px !important;
+    }
+
+    .step_marker_and_buttons{
+        margin: 0;
+        margin-top: 25px;
+        width: 100% !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .twentyfive{
+        width: 40% !important;
+        margin: 0 !important;
+        padding: 25px;
+    }
+
+    .plusimg{
+        width: 100% !important;
+        margin-bottom: 45px;
+    }
+    .step_marker{
+        padding: 25px !important;
+    }
+    .imgquest{
+        flex-direction: column;
+    }
+
+    .variant{
+        height: 100px !important;
+    }
+
+    .thirdty{
+        width: 40% !important;
+        margin-bottom: 25px;
+    }
+
     .answers_btn form {
         width: 700px;
         
@@ -205,6 +271,9 @@ input:disabled {
         width: 700px;
 
     }
+
+    
+
     .choices_div2{
         width: 700px;
     }
@@ -217,13 +286,6 @@ input:disabled {
         margin-top: 5px;
         padding-bottom: 50px;
     }
-
-    .step_marker_and_buttons {
-        width: 90vw;
-        padding-bottom: 0px;
-        
-    }
-
     .answers_btn form div {
         margin: 5px;
     }
@@ -260,21 +322,8 @@ input:disabled {
 }
 
 @media (max-width: 820px) {
-    .black_header{
-        height: 150px;
-    }
-
     .black_header h1{
         width: 70%;
-    }
-
-    .step_marker_and_buttons{
-        display: flex;
-        width: 93vw;
-    }
-
-    .theory_eom{
-        height: 600px;
     }
     .content{
         margin-right: 0;
@@ -285,8 +334,4 @@ input:disabled {
     .second{
         flex-direction: column;
     }
-}
-
-@media (max-width: 1180px) {
-
 }

@@ -1,6 +1,6 @@
 .popup_text{
-    height: 500px;
-    overflow-y: auto;
+    /* height: 500px;
+    overflow-y: auto; */
     scroll-snap-align: start;
     padding: 15px;
     align-items: flex-start;
@@ -39,6 +39,12 @@
 .popup_method_list li::marker{
     font-size: 30px;
     color: rgb(0, 112, 192);
+}
+
+ul li ul li::before{
+    font-size: 30px;
+    color: rgb(0, 112, 192);
+    background-color: rgb(0, 112, 192);
 }
 
 .list_second_level li{

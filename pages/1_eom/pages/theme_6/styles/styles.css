@@ -16,6 +16,10 @@ body{
     height: 100vh;
 }
 
+p{
+    font-size: clamp(25px,2vw,30px) !important;
+}
+
 .container{
     height: 100%;
 }
@@ -81,16 +85,10 @@ body{
 .content{
     display: flex;
     flex-direction: column;
-    height: 83vh;
-    overflow-y: auto;
-    scroll-snap-align: start;
-    padding: 35px;
-    margin: 0px 25px 25px 0px; 
 }
 
-
-
 .text_content{
+    width: 70% !important;
     padding: 15px;
 }
 
@@ -110,7 +108,6 @@ body{
     font-weight: 700;
     padding-top: 10px;
 }
-
 
 .content p span{
     font-weight: 700;
@@ -303,6 +300,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 30%;
 }
 
 #second_color{
@@ -412,7 +410,7 @@ body{
 .img_partition img{
     display: flex;
     justify-content: center;
-    width: 500px;
+    width: 100%;
 }
 
 .img_partition a img{
@@ -431,7 +429,7 @@ body{
 .content_img p{
 margin: auto;
 padding: 10px;
-font-size: 20px;
+font-size: 20px !important;
 }
 
 .content_img_notmodal{
@@ -470,11 +468,20 @@ font-size: 20px;
     }
 }
 
-@media (max-width: 1131px){
+@media (max-width: 1180px){
+    .text_content{
+        width: 100% !important;
+        margin: 0 !important;
+    }
     .content img{
         margin-left: 0;
         margin-right: 0;
-        height: 300px;
+        height: auto;
+        width: 60% !important;
+    }
+
+    .content p{
+        margin: 0 !important;
     }
 
     .text_content{
