@@ -381,10 +381,10 @@ input[type='checkbox']:checked {
     hyphens: auto;
 }
 
-.custom-dropdown{
+/* .custom-dropdown{
    
-    /* margin: 0 1%; */
-}
+    margin: 0 1%;
+} */
 .custom-dropdown-input{
     display: flex;
     align-items: center;
